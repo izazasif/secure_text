@@ -26,7 +26,8 @@ Route::get('/payment', 'PaymentController@index')->name('payment.index');
 Route::post('/payment', 'PaymentController@store')->name('payment.index');
 
 
-Route::get('/{massage}', 'MassageController@index')->name('client.massage');
+Route::get('/{massage}/{massage1}/{id}', 'MassageController@index')->name('client.massage');
+Route::get('/{massage}/{massage1}/{id}', 'MassageController@index')->name('client.massage');
 Route::post('/{massage}', 'MassageController@MassLog');
 Route::get('/client', 'ClientMassController@index')->name('client.index');
 

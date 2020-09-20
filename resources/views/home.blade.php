@@ -58,9 +58,9 @@
 
 <!-- follow me template -->
 <div class="made-with-love">
-    Made with
-    <i>♥</i> by
-    <a target="_blank" href="https://codepen.io/leo-bian">Leo Bian</a>
+    
+    <i></i>
+    <a target="_blank" href=""></a>
 </div>
            </body>
            <html>
