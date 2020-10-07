@@ -4,7 +4,8 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <title>EVERNOTE PAGE</title>
+   
+   <title>SecureNote</title>
       <meta charset="UTF-8">
       <meta name="application-name" content="evernote">
       <meta name="description" content="best note taking app">
@@ -14,7 +15,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -162,7 +162,7 @@ a {
                <div class="navbar-header logo" >
                   <img src="https://lh3.googleusercontent.com/-k6lq2mJFWAU/W6iyXfJ6EGI/AAAAAAAAACI/VP1FFXPhG5wEV3RXIPXtZE4_y5na6HzxQCL0BGAYYCw/h68/evernote%2Blogo.PNG" alt="logo" class="pull-left">
                   <a class="navbar-brand" href="#" >
-                     <h2 class="heading"><b>Evernote</b></h2>
+                     <h2 class="heading"><b>SecureNote</b></h2>
                   </a>
                </div>
                <ul class="nav navbar-nav">

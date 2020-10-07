@@ -21,7 +21,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/home','HomeController@store');
-Route::get('/user', 'UserController@index')->name('user.index');
+// Route::get('/user', 'UserController@index')->name('user.index');
 Route::get('/payment', 'PaymentController@index')->name('payment.index');
 Route::post('/payment', 'PaymentController@store')->name('payment.index');
 
@@ -29,7 +29,7 @@ Route::post('/payment', 'PaymentController@store')->name('payment.index');
 Route::get('/{massage}/{massage1}/{id}', 'MassageController@index')->name('client.massage');
 Route::get('/{massage}/{massage1}/{id}', 'MassageController@index')->name('client.massage');
 Route::post('/{massage}', 'MassageController@MassLog');
-Route::get('/client', 'ClientMassController@index')->name('client.index');
+
 
 Route ::group(['middleware' => ['admin']],function(){
     Route::get('/admin', 'AdminController@index')->name('admin.index');

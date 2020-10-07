@@ -21,7 +21,7 @@
   </div>
   <img class="cta-purple-email skrollable skrollable-after" src="https://neverbounce.com/images/background-images/cta-purple-email.png" alt="email illustration">
   <img src="https://neverbounce.com/images/background-images/cta-left-line.svg" class="cta-left-line" alt="graphic line element">
-  <img src="https://neverbounce.com/images/background-images/teal-airplane.png" class="cta-teal-airplane" alt="paper airplane">
+  
   <img class="cta-blue-email skrollable skrollable-between" src="https://neverbounce.com/images/background-images/cta-blue-email.png" alt="email illustration">
 </section>
 @if (session()->has('message'))
@@ -57,11 +57,7 @@
 </section>
 
 <!-- follow me template -->
-<div class="made-with-love">
-    
-    <i></i>
-    <a target="_blank" href=""></a>
-</div>
+
            </body>
            <html>
 @endsection

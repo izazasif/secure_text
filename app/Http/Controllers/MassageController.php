@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\ClientModel;
+
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Contracts\Encryption\DecryptException;
@@ -19,10 +20,13 @@ class MassageCOntroller extends Controller
     }
 
     public function MassLog(Request $request)
-    {
+    { 
+        
+      
         $password = $request->input('password'); 
       // $users = DB::table('client')->select('slug')->where('password',Hash::check('password',$password))->get();
-      $users = DB::table('client')->select('text')->where('password',$password)->get()->first();
+       $users = DB::table('client')->select('text')->where(Hash::check('password',$password),$password)->get()->first();
+     // dd($users);
       return view('client.index', ['users' => $users]);
 
      //return Redirect::route('clients.index')->with( ['users' => $users] );

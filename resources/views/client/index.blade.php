@@ -13,11 +13,11 @@
   <div class="col-lg-6">
     <div class="form-group">
   <div class="container">
-    <h1>Bootstrap 4 Rounded Text Input and Textarea</h1>
+    <h1>Massage For You !</h1>
     @php
          $users1=Crypt::decryptString( $users->text );
     @endphp
-  <textarea class="form-control form-rounded" rows="3">{{$users1}}</textarea>
+  <textarea class="form-control form-rounded" rows="10">{{$users1}}</textarea>
   <br />
     </div>
   </div>

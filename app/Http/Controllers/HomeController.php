@@ -51,7 +51,7 @@ class HomeController extends Controller
         $data->user_id = Auth::user()->id;
         $data->slug = SlugService::createSlug(ClientModel::class, 'slug', $request->title);
         $data->link = "http://localhost:8000/$data->slug/$data->title/$data->user_id";
-        $data->password = $request->password;
+        $data->password = Hash::make($request->password);
         $data->text = Crypt::encryptString($request->text);
         $data->save(); 
         session()->flash('message', "Massage created in this link :$data->link");
