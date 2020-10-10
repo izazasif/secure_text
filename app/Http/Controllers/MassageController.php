@@ -25,7 +25,7 @@ class MassageCOntroller extends Controller
       
         $password = $request->input('password'); 
       // $users = DB::table('client')->select('slug')->where('password',Hash::check('password',$password))->get();
-       $users = DB::table('client')->select('text')->where(Hash::check('password',$password),$password)->get()->first();
+       $users = DB::table('client')->select('text')->where('password',$password)->get()->first();
      // dd($users);
       return view('client.index', ['users' => $users]);
 
